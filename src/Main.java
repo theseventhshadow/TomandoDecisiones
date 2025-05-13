@@ -10,7 +10,6 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         ArrayList<String> opciones = new ArrayList<>();
         Random random = new Random();
-        boolean b = true;
 
         System.out.println("Cuantas opciones tienes?: ");
         int s;
@@ -24,10 +23,6 @@ public class Main {
                 System.out.println("Ingresa las opcion " + (i + 1) + " que tienes: ");
                 String op = sc.nextLine();
                 opciones.add(op);
-
-                if (s == 0) {
-                    b = false;
-                }
             }
 
 
