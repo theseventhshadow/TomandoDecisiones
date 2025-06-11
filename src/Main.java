@@ -25,10 +25,18 @@ public class Main {
                 opciones.add(op);
             }
 
+            while (true) {
 
-        int indiceAleatorio = random.nextInt(opciones.size());
-        System.out.println("Se ha seleccionado la opcion: " + opciones.get(indiceAleatorio));
+                System.out.println("Estas listo para ver el resultado?: ");
+                String respuesta = sc.nextLine();
 
+                if (respuesta.equals("si") || respuesta.equals("Si") || respuesta.equals("SI")) {
+                    int indiceAleatorio = random.nextInt(opciones.size());
+                    System.out.println("Se ha seleccionado la opcion: " + opciones.get(indiceAleatorio));
+                    break;
+                } else{
+                    System.out.println("Ingresa si o no");
+                }
+            }
         }
-
     }
